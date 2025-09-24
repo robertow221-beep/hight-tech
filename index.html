@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jogo Multiverso Futurista - Desafio por Tempo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="instructions">
+    <strong>Instruções:</strong><br>
+    Clique em <em>"Adicionar Produto"</em> para gerar bolhas.<br>
+    Colete os produtos clicando nas bolhas.<br>
+    Passe de nível coletando a meta de produtos no tempo de 30s.<br>
+    <strong>🎉 Ganhe cupons nos Níveis 3, 5 e 10!</strong><br>
+    Divirta-se! 🚀
+</div>
+
+<div id="game-container">
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+    <div class="planet planet3"></div>
+    <div class="planet planet4"></div>
+    
+    <div id="bubbles-container"></div>
+    
+    <span id="level-info" class="game-info">Nível: <span id="level">1</span></span>
+    <span id="points-info" class="game-info">Pontos: <span id="points">0</span></span>
+    <span id="products-info" class="game-info">Produtos: <span id="products">0</span></span>
+    <span id="goal-info" class="game-info">Meta: <span id="goal">10</span></span>
+
+    <div id="timer">Tempo: 30s</div>
+    <div id="discount-msg"></div>
+
+    <div id="levelup-msg">
+      Parabéns! Você passou de nível! 🚀
+      <div id="coupon-buttons">
+        
+          <button id="visitSiteCouponBtn" class="game-button">Ir para o Site</button>
+          <button id="continuePlayingBtn" class="game-button">Continuar Jogando</button>
+      </div>
+    </div>
+    
+    <div id="game-over" style="display:none;"></div>
+</div>
+
+<button id="addProductBtn">Adicionar Produto</button>
+
+<div id="action-buttons">
+    <button id="playAgainBtn" class="game-button">Jogar Novamente</button>
+    <button id="visitSiteBtn" class="game-button">Ir para o Site</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
